@@ -149,7 +149,7 @@ namespace Cyotek.Windows.Forms
 
     private int _dropShadowSize;
 
-    private Timer _freePanTimer;
+    private System.Windows.Forms.Timer _freePanTimer;
 
     private int _gridCellSize;
 
@@ -4931,7 +4931,7 @@ namespace Cyotek.Windows.Forms
 
     private void CreateTimer()
     {
-      _freePanTimer = new Timer
+      _freePanTimer = new System.Windows.Forms.Timer
       {
         Enabled = true,
         Interval = _freePanTimerInterval

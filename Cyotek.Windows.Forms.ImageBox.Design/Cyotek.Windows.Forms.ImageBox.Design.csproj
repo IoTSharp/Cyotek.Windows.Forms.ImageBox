@@ -43,6 +43,12 @@
     <Compile Include="ImageBoxDesigner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cyotek.Windows.Forms.ImageBox\Cyotek.Windows.Forms.ImageBox.csproj">
+      <Project>{4159c8d3-c18d-4bed-8be6-9bad1b0ca4f6}</Project>
+      <Name>Cyotek.Windows.Forms.ImageBox</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
