@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace Cyotek.Windows.Forms.Demo
@@ -12,7 +12,7 @@ namespace Cyotek.Windows.Forms.Demo
 
   // If you use this control in your applications, attribution, donations or contributions are welcome.
 
-  internal static class Program
+  public static class Program
   {
     #region Class Members
 
@@ -20,7 +20,7 @@ namespace Cyotek.Windows.Forms.Demo
     ///   The main entry point for the application.
     /// </summary>
     [STAThread]
-    private static void Main()
+    public static void Main()
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);

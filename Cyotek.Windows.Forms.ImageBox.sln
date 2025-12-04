@@ -18,8 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyotek.Windows.Forms.ImageBox.Design", "Cyotek.Windows.Forms.ImageBox.Design\Cyotek.Windows.Forms.ImageBox.Design.csproj", "{9F169B78-70FD-456A-BB48-2AA470938D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsTest", "WindowsFormsTest\WindowsFormsTest.csproj", "{834A7A9B-FBD8-4C2D-B929-800F73E3F8C5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyotek.Windows.Forms.ImageBox", "Cyotek.Windows.Forms.ImageBox\Cyotek.Windows.Forms.ImageBox.csproj", "{4159C8D3-C18D-4BED-8BE6-9BAD1B0CA4F6}"
 EndProject
 Global
@@ -36,10 +34,6 @@ Global
 		{9F169B78-70FD-456A-BB48-2AA470938D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F169B78-70FD-456A-BB48-2AA470938D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F169B78-70FD-456A-BB48-2AA470938D38}.Release|Any CPU.Build.0 = Release|Any CPU
-		{834A7A9B-FBD8-4C2D-B929-800F73E3F8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{834A7A9B-FBD8-4C2D-B929-800F73E3F8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{834A7A9B-FBD8-4C2D-B929-800F73E3F8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{834A7A9B-FBD8-4C2D-B929-800F73E3F8C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4159C8D3-C18D-4BED-8BE6-9BAD1B0CA4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4159C8D3-C18D-4BED-8BE6-9BAD1B0CA4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4159C8D3-C18D-4BED-8BE6-9BAD1B0CA4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU

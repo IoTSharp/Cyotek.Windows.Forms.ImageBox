@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsTest
+namespace WindowsFormsTest
 {
     partial class Form1
     {
@@ -28,29 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imageBox = new Cyotek.Windows.Forms.ImageBox();
+            this.imageBox1 = new Cyotek.Windows.Forms.ImageBox();
             this.SuspendLayout();
             // 
-            // imageBox
+            // imageBox1
             // 
-            this.imageBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imageBox.Location = new System.Drawing.Point(0, 0);
-            this.imageBox.Name = "imageBox";
-            this.imageBox.SelectionMode = Cyotek.Windows.Forms.ImageBoxSelectionMode.Rectangle;
-            this.imageBox.Size = new System.Drawing.Size(800, 450);
-            this.imageBox.TabIndex = 0;
-            this.imageBox.Text = "imageBox1";
-            this.imageBox.VirtualMode = true;
+            this.imageBox1.Location = new System.Drawing.Point(148, 94);
+            this.imageBox1.Name = "imageBox1";
+            this.imageBox1.Size = new System.Drawing.Size(436, 334);
+            this.imageBox1.TabIndex = 0;
+            this.imageBox1.Text = "imageBox1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.imageBox);
+            this.ClientSize = new System.Drawing.Size(724, 541);
+            this.Controls.Add(this.imageBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -58,6 +51,7 @@
     #endregion
 
     private Cyotek.Windows.Forms.ImageBox imageBox;
+    private Cyotek.Windows.Forms.ImageBox imageBox1;
   }
 }
 
