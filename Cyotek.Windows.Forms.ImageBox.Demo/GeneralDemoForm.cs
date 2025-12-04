@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Cyotek.Windows.Forms.Demo.Properties;
 
@@ -106,13 +107,13 @@ namespace Cyotek.Windows.Forms.Demo
       }
     }
 
-    private void fromURLToolStripMenuItem_Click(object sender, EventArgs e)
+    private async void fromURLToolStripMenuItem_Click(object sender, EventArgs e)
     {
       using (OpenUrlDialog dialog = new OpenUrlDialog())
       {
         if (dialog.ShowDialog(this) == DialogResult.OK)
         {
-          this.OpenImageFromUrl(dialog.Url);
+          await OpenImageFromUrlAsync(dialog.Url);
         }
       }
     }
@@ -201,18 +202,14 @@ namespace Cyotek.Windows.Forms.Demo
       this.UpdateStatusBar();
       this.UpdatePreviewImage();
     }
-
-    private void OpenImageFromUrl(string url)
+  
+    private async Task OpenImageFromUrlAsync(string url)
     {
       try
       {
-        using (WebClient client = new WebClient())
+        using (var client = new System.Net.Http.HttpClient())
         {
-          byte[] data;
-
-          data = client.DownloadData(url);
-
-          using (Stream stream = new MemoryStream(data))
+          using (var stream = await client.GetStreamAsync(url))
           {
             this.OpenImage(Image.FromStream(stream));
           }

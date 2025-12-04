@@ -1,5 +1,13 @@
 # Cyotek ImageBox Change Log
 
+
+## 1.5.0
+
+### Changed
+
+* Changed .Net 10 . by maikebing
+* 细分了ZoomLevelCollection 缩放级别 by czp 
+
 ## 1.4.0
 
 ### Added

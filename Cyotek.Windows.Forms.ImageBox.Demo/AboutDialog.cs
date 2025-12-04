@@ -125,7 +125,7 @@ namespace Cyotek.Windows.Forms.Demo
 
     private string GetFullReadmePath(string fileName)
     {
-      return Path.GetFullPath(Path.Combine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"), fileName));
+      return Path.GetFullPath(Path.Combine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\"), fileName));
     }
 
     private void LoadDocumentForTab(TabPage page)

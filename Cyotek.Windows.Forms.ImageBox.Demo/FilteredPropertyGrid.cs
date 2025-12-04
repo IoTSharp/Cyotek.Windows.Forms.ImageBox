@@ -108,6 +108,7 @@ namespace Cyotek.Windows.Forms.Demo
 
     /// <summary>Overwrite the PropertyGrid.SelectedObject property.</summary>
     /// <remarks>The object passed to the base PropertyGrid is the wrapper.</remarks>
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public new object SelectedObject
     {
       get { return _wrapper != null ? ((ObjectWrapper)base.SelectedObject).SelectedObject : null; }

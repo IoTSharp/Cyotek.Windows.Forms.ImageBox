@@ -205,6 +205,7 @@ namespace Cyotek.Windows.Forms.Demo
     }
 
     [Browsable(false)]
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public RectangleF PreviousSelectionRegion
     {
       get { return _previousSelectionRegion; }
